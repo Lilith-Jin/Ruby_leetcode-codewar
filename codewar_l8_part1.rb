@@ -93,3 +93,15 @@
 # puts positive_sum([1,2,3,4,5])   # 15
 # puts positive_sum([1,-2,3,4,5])  # 13
 # puts positive_sum([-1,2,3,4,-5]) # 9
+
+# 14
+# def correct(string)
+#   # 實作內容
+#   string.gsub(/[015]/, '0' => 'O', '1' => 'I', '5' => 'S') 
+# end
+
+# puts correct("L0ND0N")     # LONDON
+# puts correct("DUBL1N")     # DUBLIN
+# puts correct("51NGAP0RE")  # SINGAPORE
+# puts correct("BUDAPE5T")   # BUDAPEST
+# puts correct("PAR15")      # PARIS
