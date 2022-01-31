@@ -21,11 +21,27 @@
 #   puts nearest_sq(111)  # 121
 #   puts nearest_sq(9999) # 10000
 
-def count_sheep(num)
+# def count_sheep(num)
+#   # 實作內容
+#   (1..num).to_a.map{|x| "#{x} sheep..."}.join("")
+# end
+
+# puts count_sheep(1)  # 印出 1 sheep...
+# puts count_sheep(2)  # 印出 1 sheep...2 sheep...
+# puts count_sheep(3)  # 印出 1 sheep...2 sheep...3 sheep...
+
+# 9
+def century(year)
   # 實作內容
-  (1..num).to_a.map{|x| "#{x} sheep..."}.join("")
+  # %的值為兩者相除之餘數
+  if (year % 100) == 0
+    year/100
+  else 
+    (year - (year % 100))/100 + 1
+  end
 end
 
-puts count_sheep(1)  # 印出 1 sheep...
-puts count_sheep(2)  # 印出 1 sheep...2 sheep...
-puts count_sheep(3)  # 印出 1 sheep...2 sheep...3 sheep...
+puts century(1705)  # 18 世紀
+puts century(1900)  # 19 世紀
+puts century(1601)  # 17 世紀
+puts century(2000)  # 20 世紀
