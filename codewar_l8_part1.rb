@@ -31,20 +31,20 @@
 # puts count_sheep(3)  # 印出 1 sheep...2 sheep...3 sheep...
 
 # 9
-def century(year)
-  # 實作內容
-  # %的值為兩者相除之餘數
-  if (year % 100) == 0
-    "#{year/100} 世紀"
-  else 
-    "#{(year - (year % 100))/100 + 1} 世紀"
-  end
-end
+# def century(year)
+#   # 實作內容
+#   # %的值為兩者相除之餘數
+#   if (year % 100) == 0
+#     "#{year/100} 世紀"
+#   else 
+#     "#{(year - (year % 100))/100 + 1} 世紀"
+#   end
+# end
 
-puts century(1705)  # 18 世紀
-puts century(1900)  # 19 世紀
-puts century(1601)  # 17 世紀
-puts century(2000)  # 20 世紀
+# puts century(1705)  # 18 世紀
+# puts century(1900)  # 19 世紀
+# puts century(1601)  # 17 世紀
+# puts century(2000)  # 20 世紀
 
 # 10
 # def solution(sentence)
@@ -54,3 +54,19 @@ puts century(2000)  # 20 世紀
 
 # puts solution("The greatest victory is that which requires no battle") 
 # 印出 battle no requires which that is victory greatest The
+
+# 11
+# def squareSum(numbers)
+#   # 實作內容
+#   1
+#   if numbers.class == Array
+#     numbers.reduce{|sum,x| sum + x ** 2 }
+#   else
+#     numbers ** 2
+#   end
+#   2
+#   Array(numbers).map{|x| x ** 2}.sum
+# end
+
+# puts squareSum(2)          # 印出 4
+# puts squareSum([1, 2, 2])  # 印出 9
