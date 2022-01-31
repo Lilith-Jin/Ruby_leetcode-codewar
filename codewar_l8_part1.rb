@@ -31,17 +31,26 @@
 # puts count_sheep(3)  # 印出 1 sheep...2 sheep...3 sheep...
 
 # 9
-def century(year)
+# def century(year)
+#   # 實作內容
+#   # %的值為兩者相除之餘數
+#   if (year % 100) == 0
+#     year/100
+#   else 
+#     (year - (year % 100))/100 + 1
+#   end
+# end
+
+# puts century(1705)  # 18 世紀
+# puts century(1900)  # 19 世紀
+# puts century(1601)  # 17 世紀
+# puts century(2000)  # 20 世紀
+
+# 10
+def solution(sentence)
   # 實作內容
-  # %的值為兩者相除之餘數
-  if (year % 100) == 0
-    year/100
-  else 
-    (year - (year % 100))/100 + 1
-  end
+ sentence.split.reverse.join " "
 end
 
-puts century(1705)  # 18 世紀
-puts century(1900)  # 19 世紀
-puts century(1601)  # 17 世紀
-puts century(2000)  # 20 世紀
+puts solution("The greatest victory is that which requires no battle") 
+# 印出 battle no requires which that is victory greatest The
