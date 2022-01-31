@@ -83,3 +83,13 @@
 # p remove_char('person')    # "erso"
 # p remove_char('place')     # "lac"
 # p remove_char('ok')        # ""
+
+# 13
+# def positive_sum(arr)
+#   # 實作內容
+#   arr.select{|x| x > 0}.sum
+# end
+
+# puts positive_sum([1,2,3,4,5])   # 15
+# puts positive_sum([1,-2,3,4,5])  # 13
+# puts positive_sum([-1,2,3,4,-5]) # 9
