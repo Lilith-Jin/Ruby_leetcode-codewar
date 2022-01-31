@@ -70,3 +70,16 @@
 
 # puts squareSum(2)          # 印出 4
 # puts squareSum([1, 2, 2])  # 印出 9
+
+# 12
+# def remove_char(s)
+#   # 實作內容
+#   # s.split.delete_at(1)
+#   p s[1..-2]
+# end
+
+# p remove_char('eloquent')  # "loquen"
+# p remove_char('country')   # "ountr"
+# p remove_char('person')    # "erso"
+# p remove_char('place')     # "lac"
+# p remove_char('ok')        # ""
