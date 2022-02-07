@@ -105,3 +105,20 @@
 # puts correct("51NGAP0RE")  # SINGAPORE
 # puts correct("BUDAPE5T")   # BUDAPEST
 # puts correct("PAR15")      # PARIS
+
+# 15
+def count_sheeps(array)
+  # 實作內容
+  # array.select{|x|x == true}.count
+  array.count(true)
+
+end
+
+array1 = [true,  true,  true,  false,
+          true,  true,  true,  true ,
+          true,  false, true,  false,
+          true,  false, false, true ,
+          true,  true,  true,  true ,
+          false, false, true,  true ]
+              
+puts count_sheeps(array1)  # 17
