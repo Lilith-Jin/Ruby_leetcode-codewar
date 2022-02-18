@@ -148,10 +148,22 @@
 
 # 17 合併兩個陣列
 
-def merge_arrays(a, b)
+# def merge_arrays(a, b)
+#   # 實作內容
+#   a.concat(b).sort.uniq
+# end
+
+# p merge_arrays([1, 3, 5], [2, 4, 6])  # [1, 2, 3, 4, 5, 6]
+# p merge_arrays([2, 4, 8], [2, 4, 6])  # [2, 4, 6, 8]
+
+# 18. 縮寫產生器
+def abbrev_name(name)
   # 實作內容
-  a.concat(b).sort.uniq
+  name.split.map{|n| n[0].capitalize}.join(".")
 end
 
-p merge_arrays([1, 3, 5], [2, 4, 6])  # [1, 2, 3, 4, 5, 6]
-p merge_arrays([2, 4, 8], [2, 4, 6])  # [2, 4, 6, 8]
+puts abbrev_name("Sam Harris")      # S.H
+puts abbrev_name("Patrick Feenan")  # P.F
+puts abbrev_name("Evan Cole")       # E.C
+puts abbrev_name("P Favuzzi")       # P.F
+puts abbrev_name("David Mendieta")  # D.M
