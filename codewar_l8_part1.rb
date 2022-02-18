@@ -124,24 +124,34 @@
 # puts count_sheeps(array1)  # 17
 
 # 16扣除陣列中最大值跟最小值之後的總和
-def sum_array(arr)
+# def sum_array(arr)
+#   # 實作內容
+#     array = Array(arr)
+#     # Array將所有東西建立成array，即使是nil也會建立成[]
+#     if array.count > 2
+#       array.sort[1..-2].sum
+#     else
+#       0
+#     end
+# end
+
+# puts sum_array(nil)                      # 0
+# puts sum_array([])                       # 0
+# puts sum_array([3])                      # 0
+# puts sum_array([-3])                     # 0
+# puts sum_array([ 3, 5])                  # 0
+# puts sum_array([-3, -5])                 # 0
+# puts sum_array([6, 2, 1, 8, 10])         # 16
+# puts sum_array([6, 0, 1, 10, 10])        # 17
+# puts sum_array([-6, -20, -1, -10, -12])  # -28
+# puts sum_array([-6, 20, -1, 10, -12])    # 3
+
+# 17 合併兩個陣列
+
+def merge_arrays(a, b)
   # 實作內容
-    array = Array(arr)
-    # Array將所有東西建立成array，即使是nil也會建立成[]
-    if array.count > 2
-      array.sort[1..-2].sum
-    else
-      0
-    end
+  a.concat(b).sort.uniq
 end
 
-puts sum_array(nil)                      # 0
-puts sum_array([])                       # 0
-puts sum_array([3])                      # 0
-puts sum_array([-3])                     # 0
-puts sum_array([ 3, 5])                  # 0
-puts sum_array([-3, -5])                 # 0
-puts sum_array([6, 2, 1, 8, 10])         # 16
-puts sum_array([6, 0, 1, 10, 10])        # 17
-puts sum_array([-6, -20, -1, -10, -12])  # -28
-puts sum_array([-6, 20, -1, 10, -12])    # 3
+p merge_arrays([1, 3, 5], [2, 4, 6])  # [1, 2, 3, 4, 5, 6]
+p merge_arrays([2, 4, 8], [2, 4, 6])  # [2, 4, 6, 8]
