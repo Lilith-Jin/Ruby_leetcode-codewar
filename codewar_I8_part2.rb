@@ -101,10 +101,21 @@
 
 # 21. 請完成實作內容，請注意，在實作內容中不能使用 0123456789*+-/ 字元
 
-def give_me_five
-  # 實作內容
-  # Math.sqrt(25).to_i
-  "loveu".length
-end  
+# def give_me_five
+#   # 實作內容
+#   # Math.sqrt(25).to_i
+#   "loveu".length
+# end  
 
-puts give_me_five  # 5
+# puts give_me_five  # 5
+
+# 22. 想辦法讓以下程式正常運作：
+# 陣列去使用一個方法，第一個反應是視為開放類別，去定義一個方法
+class Array
+  def second
+    self[1]
+  end
+end
+p [1,2,3].second  # 2
+p [].second       # nil
+p [1].second      # nil
