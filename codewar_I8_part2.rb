@@ -121,14 +121,26 @@
 # p [1].second      # nil
 
 # 23. 完成以下實作內容
-def compute
+# def compute
+#   # 實作內容
+#   if block_given?
+#     yield
+#   else
+#     "Do not compute"
+#   end
+# end
+
+# puts compute { "Block" }  # 印出 Block
+# puts compute              # 印出 Do not compute
+
+# 24. 完成以下實作內容s
+class Ghost
   # 實作內容
-  if block_given?
-    yield
-  else
-    "Do not compute"
+  def color
+    a = ["white", "yellow", "purple", "red"]
+    a.shuffle
   end
 end
 
-puts compute { "Block" }  # 印出 Block
-puts compute              # 印出 Do not compute
+ghost = Ghost.new
+puts ghost.color          # 隨機印出 white, yellow, purple, red 這四種顏色的字串
