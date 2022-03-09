@@ -111,11 +111,24 @@
 
 # 22. 想辦法讓以下程式正常運作：
 # 陣列去使用一個方法，第一個反應是視為開放類別，去定義一個方法
-class Array
-  def second
-    self[1]
+# class Array
+#   def second
+#     self[1]
+#   end
+# end
+# p [1,2,3].second  # 2
+# p [].second       # nil
+# p [1].second      # nil
+
+# 23. 完成以下實作內容
+def compute
+  # 實作內容
+  if block_given?
+    yield
+  else
+    "Do not compute"
   end
 end
-p [1,2,3].second  # 2
-p [].second       # nil
-p [1].second      # nil
+
+puts compute { "Block" }  # 印出 Block
+puts compute              # 印出 Do not compute
