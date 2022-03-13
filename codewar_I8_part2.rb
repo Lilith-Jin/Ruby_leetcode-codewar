@@ -146,21 +146,38 @@
 # puts ghost.color          # 隨機印出 white, yellow, purple, red 這四種顏色的字串
 
 # 25. 完成以下實作內容
-class Cat
-  # 實作內容
-  def initialize(name)
-    @name = name
-  end
-  def speak
-    puts "#{@name} meows"
-  end
-end
+# class Cat
+#   # 實作內容
+#   def initialize(name)
+#     @name = name
+#   end
+#   def speak
+#     puts "#{@name} meows"
+#   end
+# end
 
-kitty = Cat.new('Mr Whiskers')
-kitty.speak   # 印出 Mr Whiskers meows.
+# kitty = Cat.new('Mr Whiskers')
+# kitty.speak   # 印出 Mr Whiskers meows.
 
-nancy = Cat.new('Lamp')
-nancy.speak   # 印出 Lamp meows.
+# nancy = Cat.new('Lamp')
+# nancy.speak   # 印出 Lamp meows.
 
-sherly = Cat.new('$$Money Bags$$')
-sherly.speak  # 印出 $$Money Bags$$ meows.
+# sherly = Cat.new('$$Money Bags$$')
+# sherly.speak  # 印出 $$Money Bags$$ meows.
+
+# 26 完成以下實作內容
+# class Ball
+#   def initialize(p = "regular")
+#     @power = p
+#   end
+#   # 實作內容
+#   def ball_type
+#     puts "#{@power}"
+#   end
+# end
+
+# ball1 = Ball.new
+# puts ball1.ball_type   # 印出 regular
+
+# ball2 = Ball.new("super")
+# puts ball2.ball_type   # 印出 super
