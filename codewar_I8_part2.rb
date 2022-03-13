@@ -133,14 +133,34 @@
 # puts compute { "Block" }  # 印出 Block
 # puts compute              # 印出 Do not compute
 
-# 24. 完成以下實作內容s
-class Ghost
+# 24. 完成以下實作內容
+# class Ghost
+#   # 實作內容
+#   def color
+#     a = ["white", "yellow", "purple", "red"]
+#     a.shuffle
+#   end
+# end
+
+# ghost = Ghost.new
+# puts ghost.color          # 隨機印出 white, yellow, purple, red 這四種顏色的字串
+
+# 25. 完成以下實作內容
+class Cat
   # 實作內容
-  def color
-    a = ["white", "yellow", "purple", "red"]
-    a.shuffle
+  def initialize(name)
+    @name = name
+  end
+  def speak
+    puts "#{@name} meows"
   end
 end
 
-ghost = Ghost.new
-puts ghost.color          # 隨機印出 white, yellow, purple, red 這四種顏色的字串
+kitty = Cat.new('Mr Whiskers')
+kitty.speak   # 印出 Mr Whiskers meows.
+
+nancy = Cat.new('Lamp')
+nancy.speak   # 印出 Lamp meows.
+
+sherly = Cat.new('$$Money Bags$$')
+sherly.speak  # 印出 $$Money Bags$$ meows.
