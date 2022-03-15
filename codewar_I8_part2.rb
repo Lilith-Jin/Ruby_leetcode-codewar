@@ -181,3 +181,13 @@
 
 # ball2 = Ball.new("super")
 # puts ball2.ball_type   # 印出 super
+
+# 27 完成以下實作內容
+def format_money(amount)
+  # 實作內容
+  "$%0.2f" %[amount]
+end
+
+puts format_money(39.99)  # 印出 $39.99
+puts format_money(39.90)  # 印出 $39.90
+puts format_money(39)     # 印出 $39.00
