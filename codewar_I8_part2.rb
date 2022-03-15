@@ -183,11 +183,28 @@
 # puts ball2.ball_type   # 印出 super
 
 # 27 完成以下實作內容
-def format_money(amount)
+# def format_money(amount)
+#   # 實作內容
+#   "$%0.2f" %[amount]
+# end
+
+# puts format_money(39.99)  # 印出 $39.99
+# puts format_money(39.90)  # 印出 $39.90
+# puts format_money(39)     # 印出 $39.00
+
+# 28. 請計算在幾年後，爸爸的年紀是兒子的二倍？
+
+def twice_as_old(father, son)
   # 實作內容
-  "$%0.2f" %[amount]
+  x = 1
+  while x + father != 2*(x + son)
+    x += 1
+  end
+    return x
 end
 
-puts format_money(39.99)  # 印出 $39.99
-puts format_money(39.90)  # 印出 $39.90
-puts format_money(39)     # 印出 $39.00
+puts twice_as_old(36,7)   # 22
+puts twice_as_old(65,30)  # 5
+puts twice_as_old(42,21)  # 0
+puts twice_as_old(22,1)   # 20
+puts twice_as_old(29,0)   # 29
