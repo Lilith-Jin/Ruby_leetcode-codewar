@@ -194,17 +194,34 @@
 
 # 28. 請計算在幾年後，爸爸的年紀是兒子的二倍？
 
-def twice_as_old(father, son)
+# def twice_as_old(father, son)
+#   # 實作內容
+#   x = 1
+#   while x + father != 2*(x + son)
+#     x += 1
+#   end
+#     return x
+# end
+
+# puts twice_as_old(36,7)   # 22
+# puts twice_as_old(65,30)  # 5
+# puts twice_as_old(42,21)  # 0
+# puts twice_as_old(22,1)   # 20
+# puts twice_as_old(29,0)   # 29
+
+# 29. 「二的 N 次方」，當 n = 0，印出 2 的 0 次方；當 n = 2，印出 2 的 0 次方、2 的 1 次方、2 的 2 次房，以此類推。完成以下實作：
+
+def powers_of_two(n)
   # 實作內容
-  x = 1
-  while x + father != 2*(x + son)
-    x += 1
+  ary = []
+  if n == 0
+    ary.push(2**n)
+  else
+    ary = [1]
+    ary.push(((1..n).map{|i|2**i})).flatten
   end
-    return x
 end
 
-puts twice_as_old(36,7)   # 22
-puts twice_as_old(65,30)  # 5
-puts twice_as_old(42,21)  # 0
-puts twice_as_old(22,1)   # 20
-puts twice_as_old(29,0)   # 29
+p powers_of_two(0)   # [1]
+p powers_of_two(1)   # [1, 2]
+p powers_of_two(4)   # [1, 2, 4, 8, 16]
