@@ -211,17 +211,36 @@
 
 # 29. 「二的 N 次方」，當 n = 0，印出 2 的 0 次方；當 n = 2，印出 2 的 0 次方、2 的 1 次方、2 的 2 次房，以此類推。完成以下實作：
 
-def powers_of_two(n)
+# def powers_of_two(n)
+#   # 實作內容
+#   ary = []
+#   if n == 0
+#     ary.push(2**n)
+#   else
+#     ary = [1]
+#     ary.push(((1..n).map{|i|2**i})).flatten
+#   end
+# end
+
+# p powers_of_two(0)   # [1]
+# p powers_of_two(1)   # [1, 2]
+# p powers_of_two(4)   # [1, 2, 4, 8, 16]
+
+# 30. 實作猜拳程式
+def rock_paper_scissor(p1, p2)
   # 實作內容
-  ary = []
-  if n == 0
-    ary.push(2**n)
+  if p1 == 'rock'&& p2 == 'scissors'|| p1 == 'paper'&& p2 == 'rock'
+    puts "Player 1 won!"
+  elsif p1 == 'paper' && p2 == 'scissors' || p1 == 'rock'&& p2 == 'paper'
+    puts "Player 2 won!"
   else
-    ary = [1]
-    ary.push(((1..n).map{|i|2**i})).flatten
+    puts "Draw!"
   end
 end
 
-p powers_of_two(0)   # [1]
-p powers_of_two(1)   # [1, 2]
-p powers_of_two(4)   # [1, 2, 4, 8, 16]
+puts rock_paper_scissor('rock', 'scissors')      # 印出 Player 1 won!
+puts rock_paper_scissor('paper', 'rock')         # 印出 Player 1 won!
+puts rock_paper_scissor('paper', 'scissors')     # 印出 Player 2 won!
+puts rock_paper_scissor('rock', 'paper')         # 印出 Player 2 won!
+puts rock_paper_scissor('rock', 'rock')          # 印出 Draw!
+puts rock_paper_scissor('scissors', 'scissors')  # 印出 Draw!
