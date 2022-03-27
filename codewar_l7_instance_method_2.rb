@@ -2,28 +2,40 @@
 
 class Block
   # 實作內容
+  # def initialize(arr)
+  #   @arr = arr
+  # end
+
+  # def width
+  #   @arr[0]
+  # end
+
+  # def length
+  #   @arr[1]
+  # end
+
+  # def height
+  #   @arr[2]
+  # end
+
+  # def volume
+  #   @arr[0]*@arr[1]*@arr[2]
+  # end
+
+  # def surface_area
+  #   (@arr[0] * @arr[1]) * 6
+  # end
+  attr_accessor :width, :length, :height
   def initialize(arr)
-    @arr = arr
-  end
-
-  def width
-    @arr[0]
-  end
-
-  def length
-    @arr[1]
-  end
-
-  def height
-    @arr[2]
+    @width, @length, @height = arr
   end
 
   def volume
-    @arr[0]*@arr[1]*@arr[2]
+    width * length * height
   end
 
   def surface_area
-    (@arr[0] * @arr[1]) * 6
+    (width * length + length * height + width * height)*2
   end
 end
 
