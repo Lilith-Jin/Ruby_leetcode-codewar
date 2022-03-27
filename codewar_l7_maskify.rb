@@ -1,10 +1,11 @@
 def maskify(card_number)
   # 實作內容
-  if card_number.length < 4
-    card_number
-  else
-    "#{"#"*(card_number.length - 4)}#{card_number[-4, 4]}"
-  end
+  # if card_number.length < 4
+  #   card_number
+  # else
+  #   "#{"#"*(card_number.length - 4)}#{card_number[-4, 4]}"
+  # end
+  card_number.gsub(/.(?=....)/,"#")
 end
 
 p maskify('4556364607935616')#'############5616'
