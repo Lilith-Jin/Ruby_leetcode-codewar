@@ -1,14 +1,15 @@
 #調整以下實作，讓程式可順利執行
 class Human
-  def initialize(my_name)
-    @my_name = my_name
+  attr_reader :name
+  def initialize(name)
+   @name = name
   end
   def greet(your_name)
-    "Hello #{your_name}, my name is #{@my_name}"
+    "Hello #{your_name}, my name is #{@name}"
   end
-  def name
-    "#{@my_name}"
-  end
+  # def name
+  #   "#{@my_name}"
+  # end
 end
 
     jack = Human.new("Jack")
