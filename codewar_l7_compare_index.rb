@@ -1,14 +1,5 @@
 def first_non_consecutive(arr)
-  non_consecutive = nil
-  arr.each_with_index do |a, index|
-    next_item = arr[index + 1]
-    break if next_item.nil?
-    if a + 1 != next_item  
-      non_consecutive = next_item 
-      break
-    end
-  end
-  non_consecutive
+ arr.each_cons(2){|a,b|return b if b - a >1 }
 end
 
 
