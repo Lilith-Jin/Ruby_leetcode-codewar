@@ -1,10 +1,6 @@
 def solve s
   #...
-  if s.scan(/[A-Z]/).length > s.scan(/[a-z]/).length
-    s.upcase
-  else
-    s.downcase
-  end
+  s.count("A-Z") > s.count("a-z")? s.upcase : s.downcase
 end
 
 p solve("code")#"code"
