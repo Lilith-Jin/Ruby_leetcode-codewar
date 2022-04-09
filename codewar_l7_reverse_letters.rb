@@ -1,6 +1,6 @@
 def reverse_letter(string)
   #your code here
-  string.reverse.gsub(/\d/,"")
+  string.gsub(/[^a-zA-Z]/, '').reverse
 end
 
 p reverse_letter("krishan")#"nahsirk"
