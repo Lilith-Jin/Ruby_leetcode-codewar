@@ -1,15 +1,16 @@
 def row_weights(array)
   #your code here
-  odd_sum = 0 
-  even_sum = 0
-  array.each_with_index{|val,index|
-    if index % 2 == 0
-      odd_sum += val.to_i 
-    else
-      even_sum += val.to_i
-    end
-    };
-  [odd_sum,even_sum]
+  # odd_sum = 0 
+  # even_sum = 0
+  # array.each_with_index{|val,index|
+  #   if index % 2 == 0
+  #     odd_sum += val.to_i 
+  #   else
+  #     even_sum += val.to_i
+  #   end
+  #   };
+  # [odd_sum,even_sum]
+  array.partition.with_index{|value,index| index.even?}.map{|e| e.sum }
 end
 
 p row_weights([80])#([80,0])
