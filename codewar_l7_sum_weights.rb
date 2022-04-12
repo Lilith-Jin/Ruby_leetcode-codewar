@@ -1,5 +1,6 @@
 def row_weights(array)
   #your code here
+  
 end
 
 p row_weights([80])#([80,0])
