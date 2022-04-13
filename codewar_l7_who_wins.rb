@@ -1,12 +1,21 @@
 def rps(p1, p2)
   #your code here
- if p1 =='rock'&& p2 == 'scissors'|| p1 == 'scissors'&& p2 == 'paper' ||p1 == 'paper' && p2 == 'rock'
-  return "Player 1 won!"
- elsif p1 =='scissors'&& p2 == 'rock'|| p1 == 'paper'&& p2 == 'scissors' ||p1 == 'rock' && p2 == 'paper'
-  return "Player 2 won!"
- else
-  'Draw!'
- end
+#  if p1 =='rock'&& p2 == 'scissors'|| p1 == 'scissors'&& p2 == 'paper' ||p1 == 'paper' && p2 == 'rock'
+#   return "Player 1 won!"
+#  elsif p1 =='scissors'&& p2 == 'rock'|| p1 == 'paper'&& p2 == 'scissors' ||p1 == 'rock' && p2 == 'paper'
+#   return "Player 2 won!"
+#  else
+#   'Draw!'
+#  end
+beatmap = {"rock"=>"scissors","scissors"=>"paper","paper"=>"rock"}
+  if p1 == p2
+    'Draw!'
+  elsif
+    beatmap[p1]==p2
+    "Player 1 won!"
+  else
+    "Player 2 won!"
+  end
 end
 
 p rps('rock', 'scissors')#"Player 1 won!"
