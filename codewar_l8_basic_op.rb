@@ -1,6 +1,7 @@
 def basic_op(operator, value1, value2)
   #your code here
-  value1.send(operator,value2)
+  # value1.send(operator,value2)
+  eval("#{value1}#{operator}#{value2}")
 end
 
 p basic_op('+', 4, 7)# 11
