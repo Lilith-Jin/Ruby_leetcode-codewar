@@ -1,10 +1,7 @@
 def validate_pin(pin)
   #return true or false
-  if pin.delete("^0-9\S").length == 4 || pin.delete("^0-9\S").length == 6
-    true
-  else
-    false
-  end
+  # pin.match? /\A\d{4}(\d{2})?\z/
+  (pin.length == 4 || pin.length == 6) && pin.count("0-9") == pin.length
 end
 
 p validate_pin("")#false
