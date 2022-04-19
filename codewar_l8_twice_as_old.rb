@@ -1,10 +1,11 @@
 def twice_as_old(dad, son)
   # Have some code do stuff and possibly things
-  if dad - 2*son > 0
-    dad - 2*son
-  else
-    (dad - 2*son)*-1
-  end
+  # if dad - 2*son > 0
+  #   dad - 2*son
+  # else
+  #   (dad - 2*son)*-1
+  # end
+  (dad - 2*son).abs
 end
 
 p twice_as_old(36,7)#22,"Dad is 36 and Son is 7"
